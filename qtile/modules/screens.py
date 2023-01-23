@@ -8,14 +8,21 @@ screens = [
     Screen(
         top=bar.Bar(
             [   widget.Sep(padding=3, linewidth=0, background="#ff7faa"),
-                widget.Sep(padding=4, linewidth=0, background="#ff7faa"), 
-                widget.GroupBox(
-                                highlight_method='line',
-                                this_screen_border="#ffffff",
-                                this_current_screen_border="#ff54ef",
-                                active="#f51200",
-                                inactive="#fd14ff",
-                                background="#faff74"),
+                widget.Sep(padding=4, linewidth=0, background="#ff7faa"),
+		widget.TextBox(
+                       text = '',
+                       padding = 0,
+                       fontsize = 28,
+                       foreground='#faff74',
+		       Background='#ff99bb',
+                       ),  
+	        widget.GroupBox(
+                       highlight_method='line',
+                       this_screen_border="#ffffff",
+                       this_current_screen_border="#ff54ef",
+                       active="#f51200",
+                       inactive="#fd14ff",
+                       background="#faff74"),
                 widget.TextBox(
                        text = '',
                        padding = 0,
