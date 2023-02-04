@@ -15,13 +15,15 @@ keys = [
         lazy.layout.next(),
         desc="Move window focus to other window"),
 
-    Key([mod], "d", lazy.spawn("dmenu_run")),
+    Key([mod], "d", lazy.spawn("Hex")),
     Key([mod], "w", lazy.spawn("librewolf")),
     Key([mod], "f", lazy.spawn("thunar")),
     Key([mod], "s", lazy.spawn("spotify")),
     Key([mod], "t", lazy.spawn("teams")),
     Key([mod], "g", lazy.spawn("steam")),
-    
+    Key([mod], "o", lazy.spawn("openttd-jgrpp")),   
+    Key([mod, "shift"], "d", lazy.spawn("discord")),
+
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
     Key([mod, "shift"],
